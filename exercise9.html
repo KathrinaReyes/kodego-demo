@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Form</title>
+    </head>
+    <body>
+        <main>
+            <form>
+                <section> 
+                    <!--This is the form-->
+                    <table cellspacing="3" cellpadding="8">
+                        <thead>
+                            <h1>Personal Info</h1>
+                        </thead>
+                        <tr>
+                            <td>
+                                <label for="fname"><strong>Full Name:</strong></label>
+                            </td>
+                            <td>
+                                <input type="text" id="fname" class="input-field"
+                                placeholder="Enter your name" maxlength="40" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Email Address"><strong>Email Address:</strong></label>
+                            </td>
+                            <td>
+                                <input type="email" id="email" name="email"
+                                placeholder="example@email.com" maxlength="45" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="log-in password"><strong>Password:</strong></label>
+                            </td>
+                            <td>
+                                <input type="password" name="log-in password" id="log-in password"
+                                placeholder="Enter your password" maxlength="15">
+                            </td>
+                        </tr>
+                        <tr>
+                        <td>
+                            <span><strong>Status:</strong></span>
+                        </td>
+                        <td>
+                            <label for="status-single">
+                                <input type="radio" name="status" id="status-single"
+                                value="S">Single</label>
+                                <label for="status-married">
+                                <input type="radio" name="status" id="status-married"
+                                value="M">Married</label>
+                            <label for="status-widow">
+                                <input type="radio" name="status" id="status-widow"
+                                value="W">Widow</label>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Date of Birth:"><strong>Date of Birth:</strong></label>
+                            </td>
+                            <td>
+                                <input type="date" name="dob" id="dob" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Age"><strong>Age:</strong></label>
+                            </td>
+                            <td>
+                                <input type="Number" id="age" name="age" value="18" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span><strong>Government Benefits:</strong></span>
+                            </td>
+                            <td>
+                                <label for="SSS">
+                                    <input type="radio" name="sss" id="sss">SSS
+                                </label>
+                                <label for="HDMF">
+                                    <input type="radio" name="hdmf" id="hdmf">HDMF
+                                </label>
+                                <label for="Philhealth">
+                                    <input type="radio" name="philhealth" id="philhealth">Philhealth
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Preferred Schedule"><strong>Preferred Schedule:</strong></label>
+                            </td>
+                            <td>
+                                <input type="time" name="schedule" id="myschedule" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span><strong>Payout Options:</strong></span>
+                            </td>
+                            <td>
+                                <select name="payout" id="payoutoption" >
+                                    <option value="weekly">Weekly</option>
+                                    <option value="monthly">Monthly</option>
+                                    <option value="Yearly">Yearly</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Internet Provider"><strong>Internet Provider:</strong></label>
+                            </td>
+                            <td>
+                                <input type="text" name="internet provider" id="internet provider" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="upload-id-photo"><strong>Upload ID Photo:</strong></label>
+                            </td>
+                            <td>
+                                <input type="file" name="upload-id-photo" id="uploadphoto">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Additional Info"><strong>Additional Info:</strong></label>
+                            </td>
+                            <td>
+                                <textarea name="comments" id="additional info" cols="30" rows="10"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="Submit" value="Sumbit">
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+            </form>
+        </main>
+        <p align="left">
+            Back to <a href="http://localhost/index2.html"><strong>Home Page</strong></a>
+        </p>
+    </body>
+</html>
