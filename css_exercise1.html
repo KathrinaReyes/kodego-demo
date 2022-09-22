@@ -4,7 +4,6 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheets" href="css/style.css">
 		<title>Exercise 10: Basic CSS</title>
 	</head>
 	<style>
@@ -33,18 +32,20 @@
 		
 		h2 {
 			text-align: center;
+			text-align: justify;
 			font-style: oblique;
 			color: darkred;
 		}
 		
 		h3 {
-			text-decoration: underline;
+			text-shadow:2px 2px goldenrod ;
             text-align: center;
         }
 
-		article, p {
+		article + p {
 			background-image: url('kodego-demo/assets/img/paper.gif');
-            border-radius: 20px;
+            text-align: justify;
+			border-radius: 20px;
 		}
 		
 		span {
@@ -52,15 +53,6 @@
 			background-color: hsl(0, 20%, 50%);
 		}
 
-		#img {
-			border-radius: 10px;
-			display:block;
-			width: 35%;
-			height: auto;
-			margin-left: auto;
-			margin-right: auto;
-		}
-		
 		a:link {
 			color:rgb(93, 34, 13);
 			text-decoration: underline;
@@ -72,8 +64,26 @@
 
 		a:hover {
 			color: white;
-			background-color: cyan;
 		}
+		
+		a:active {
+			color:cyan;
+		}
+
+		.sample-code {
+            color: red;
+            font-weight: bold;
+        }
+
+		.separator {
+			text-decoration: underline;
+			font-style: italic;
+		}
+
+		.boxed {
+			border: solid green;
+		}
+
 		</style>
 		<body>
 		<main>
@@ -81,8 +91,8 @@
 			<article>
 				<h2>Learning CSS3 selectors - "The basics"
 				</h2>
-				<div id="logo">
-					<img src=/assets/img/learn-css.jpg" alt="">
+				<div>
+					<img src="/assets/img/learn-css.jpg" alt="img">
 				</div>
 				<p>
 					To apply CSS to an element you need to select it. CSS provides you with a number of different ways to do this, and you can explore them in this module.
