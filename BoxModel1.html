@@ -8,14 +8,14 @@
 		<link rel="stylesheets" href="style.css">
 		<style>
 		
-		h1 {
+		header {
 			
 			text-align: center;
 			font-family:Verdana, Geneva, Tahoma, sans-serif;
 			padding-top: 4px;
 		}
 		
-		nav {
+		nav{
 			
 			width: 100%;
 			height: 70px;
@@ -52,14 +52,18 @@
 			padding-left: 15%;
 		}
 		
-		#mycenter {
-			
-			width: 50%;
-            height: 250px;
-			float: left;
-			text-align:left;
+		.list {
+			list-style-position: inside;
+		}
+		
+		.center {
 			font-style: oblique;
-			font-weight:200;
+		    float: left;
+		    width: 45%;
+		    padding-left: 2px;
+		    padding-right: 2px;
+		    border-left: 1px solid black;
+		    border-right: 1px solid black;
 		}
 		
 		.aleft {
@@ -67,6 +71,7 @@
 			width: 25%;
             float: left;
 			font-style: oblique;
+			font-weight: bold;
 		}
 		
 		#img {
@@ -79,6 +84,8 @@
 			
 			width: 25%;
             float: right;
+			padding-left: 8px;
+			padding-right: 10px;
 		}
 
 		#img2 {
@@ -102,18 +109,23 @@
 			
 			background-color: cyan;
 		}
+
+		.end {
+			font-weight: bold;
+		}
 		
 		u {
 			color: goldenrod;
 		}
 
-		.footer {
-			
-			position: fixed;
-			left: 0;
-			bottom: 0;
-			width: 100%;
-			text-align: center;
+		i { 
+			font-weight: bold;
+		}
+		
+		footer {
+			clear: left;
+		    padding-top: 10px;
+		    text-align: center;
 			font-weight: bold;
 		}
 		</style>
@@ -133,11 +145,11 @@
 		<aside class="aleft">
 			<figure>
 				<img id="img" src="../kodego-demo/assets/img/book2jpg.jpg" alt="book2jpg">
-                
+					
 				<figcaption>Books</figcaption>
 			</figure>
 			<div>
-				<ul>
+				<ul class="list">
 					<li><a href="#">Home</a></li>
 					<li><a href="#">About</a></li>
 					<li><a href="#">Contact</a></li>
@@ -145,7 +157,7 @@
 				</ul>
 			</div>
 		</aside>
-		<section id="mycenter">
+		<section class="center">
 			<article>
 				<header>
 					<h1>
@@ -160,7 +172,7 @@
 						Frist of all you should know that every letter from you will always be a pleasure and you only need to be understanding with reagrad to the replies which often, maybe, will leave you with empty hands; for at bottom and particularly in the deepest and most inportant things we are unutterably alone and for one person to be able to advise let alone help another, a great deal must come right, a whole constellation of things must concur for it to be possible at all.
 					</p>
 				</div>
-				<p>
+				<p class="end">
 					#End of Article
 				</p>
 			</article>
@@ -168,7 +180,7 @@
 				<header>
 					<h1>
 						<u>Important Things</u>
-					</h1>
+				    </h1>
 				</header>
 			</article>
 			<div>
@@ -184,6 +196,7 @@
 					<strong>Bible</strong>
 					and the books of the great Danish writer
 					<i>Jens Peter Jacobsen<i>.
+
 				</p>
 			</div>
 			<p>
@@ -196,15 +209,15 @@
 				<figcaption>Sports</figcaption>
 			</figure>
 			<div>
-				<ul>
+				<ul class="list">
 					<li><a href="#">Home</a></li>
 					<li><a href="#">About</a></li>
 					<li><a href="#">Contact</a></li>
-
+						
 				</ul>
 			</div>
 		</aside>
-		<footer class="footer">
+		<footer>
 			<hr>
 			Copyright &copy;  KodeGo
 		</footer>
