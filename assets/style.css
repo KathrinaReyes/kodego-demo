@@ -1,0 +1,78 @@
+body {
+    font-family: roboto;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+}
+
+.li-nav-items li {
+    list-style: none;
+}
+
+.li-nav-items li a {
+    text-decoration:none ;
+}
+
+.create-post-btn {
+    background-color: #ff5a5f;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.2rem;
+
+}
+
+nav ul li {
+    padding: 3px;
+}
+nav img {
+    margin: 4px ;
+    width: 100% ;
+}
+
+.li-nav-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header {
+    display:flex;
+    min-height: 80vh;
+    background: url(../img/sunsets.jpg);
+    justify-content: center;
+    align-items: flex-start;
+    background-size: cover;
+}
+
+p {
+    margin: 1.5rem;
+
+}
+.header-content h1 {
+    font-size: 5rem;
+    padding:10px;
+    color:#14213d;
+}
+.header-content {
+    text-align: center;
+    padding: 10px;
+}
+.header-content a {
+    padding: 15px 20px;
+    border: 1px solid #333;
+    background-color:#fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    color:#333;
+}
+
+header>div p {
+    margin:40px;
+}
+
+

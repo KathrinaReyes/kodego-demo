@@ -15,7 +15,7 @@
 		body {
 			background-color: gray;
 			position: relative;
-			line-height: 1.6;
+			line-height: 1.55;
 			font-style: oblique;
 			margin-left: 0;
 			padding-left: 1px;
@@ -41,8 +41,12 @@
 			margin: 5px 10px;
 		}
 		
+		.btn-pink:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+		}
+		
 		.container{
-            width: 100%;
+            width: 95%;
             position: relative;
 		}
 		.container a{
@@ -55,9 +59,11 @@
 		
 		h1 {
 			font-style: oblique;
+			font-size: 3.15rem;
 			font-weight: bold;
 			vertical-align: top;
-			padding-top: 10px;
+			padding-left: 2px;
+			padding-top: 20px;
 			padding-bottom: 20px;
 			font-size: 20px;
 			margin-bottom: 5px;
@@ -76,24 +82,25 @@
 			padding-left:1%;
 		}
 		.boxingpic-right {
-			width: 100%;
+			width: 110%;
 			border: 1px solid black;
 		}
 		#diet {
-			width:95%;
-				height: auto;
+			width:110%;
+				height:auto;
 		}
 		#drills {
-			width:100%;
+			width:110%;
 			height: auto;
 		}
 		.left-side-div {
 			position: relative;
             left:1%;
-			width: 45%;
-            height: 350px;
+			width: 60%;
+            height: 600px;
 			background-color: beige;
-            margin: 4px 4px 5px 5px;
+            margin-left: 1px;
+			margin-top: 5px;
             border-radius: 20px;
             padding-left: 5px;
 			padding-right: 8px;
@@ -112,28 +119,45 @@
 		}
 		.alert{
 			position: absolute;
-			right:15px;
+			right:10px;
 			top:5px;
 		}
 		.alert button{
             font-size: 15px;
             padding: 10px;
             color: whitesmoke;
-            background-color:rgb(86, 63, 5);
+            background-color:rgb(114, 85, 11);
             border-radius: 6px;
             border: none;
 		}
+		
+		.alert button:hover {background-color: rgb(86, 63, 5)
+		}
+
+        .alert button:active {
+            background-color:rgb(86, 63, 5);
+            box-shadow: 0 5px 8px #666;
+            transform: translateY(4px);
+		}
 		.promo{
 			position: fixed;
-			bottom: 0;
-            left: 0;
+			bottom: 5px;
+            left: 12px;
 		}
 		.promo button{
 			padding: 20px 100px;
             border-radius:3px;
-            background-color: red;
+            background-color: rgb(229, 49, 49);
             font-size: 15px;
             color: whitesmoke;
+		}
+		.promo button:hover {background-color: red;
+		}
+
+        .promo button:active {
+            background-color:red;
+            box-shadow: 0 5px 8px #666;
+            transform: translateY(4px);
 		}
 		</style>
 	</head>
