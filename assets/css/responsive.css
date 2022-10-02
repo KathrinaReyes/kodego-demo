@@ -1,0 +1,475 @@
+body {
+    font-family: "roboto", sans-serif;
+    font-size: 1.4rem;
+}
+
+nav {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+}
+
+.li-nav-items li {
+    list-style: none;
+}
+
+.li-nav-items li a {
+    text-decoration:none;
+}
+        
+.create-post-btn {
+    background-color: #ff5a5f;
+    color: #fff;
+    padding: 6px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+nav ul li {
+    padding: 3px;
+}
+        
+img {
+    width: 100%;
+}
+        
+nav img {
+    margin: 4px ;
+    width: 100px ;
+}
+.li-nav-items {
+    display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+}
+
+/* HEADER */
+header {
+    display:flex;
+    min-height: 80vh;
+    /* Relative to 1% of the height of the viewport
+    Viewport = the browser window size. if the viewport is 50cm wide, 80vh = 40cm */
+    background: url("../img/Sunset.jpg");
+    justify-content: center;
+    align-items: flex-start;
+    background-size: cover;
+}
+        
+p {
+    margin: 1.5rem;
+    line-height: 1.4rem;
+    color:#333;
+}
+        
+.header-content h1 {
+    font-size: 5rem;
+    padding:10px;
+    color:#14213d;
+}
+        
+.header-content {
+    text-align: center;
+    padding: 10px;
+}
+        
+.header-content a {
+    padding: 15px 20px;
+    border: 1px solid #333;
+    background-color:#fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    color:#333;
+}
+        
+header>div p {
+    margin:40px;
+}
+        
+/* MAIN CONTENT*/
+        
+.container-flex {
+    display:flex;
+    flex-direction: column;
+    margin: 0 auto; /* center content in your container */
+    max-width: 1900px;
+}
+        
+main {
+    padding:10px;
+}
+
+.post-content {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color:#14213d;
+}
+        
+.post-author{
+    margin:10px;
+}
+        
+aside {
+    padding: 10px;
+}
+
+.about-me {
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+}
+        
+.about-me img {
+    width:100px;
+    height: 100px;
+    border-radius:50%;
+    margin: 0 auto;
+}
+        
+.post-content h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom:20px;
+    color:#14213d;
+}
+
+.about {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: #ffbe0b;
+}
+
+footer {
+    background-color:#003049 ;
+}
+
+.about p {
+    color:#8d99ae;
+}
+        
+.logo-text ~ span {
+    color: #fff;
+}
+
+footer .content i {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.socials a {
+    margin:10px;
+    text-decoration: none;
+    font-size: 30px;
+    color:#fcbf49;
+}
+
+.contact a {
+    text-decoration: none;
+    color:#0077b6;
+    font-size: 30px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    font-size:1.5rem ;
+    margin-bottom: 10px;
+}
+
+.socials {
+    margin-bottom: 10px;
+}
+
+@media( min-width: 675px) {
+    
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+            
+    .li-nav-items {
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-around;
+        margin-right: 20px;
+    }
+
+    nav ul li {
+        padding:10px;
+    }
+            
+    main {
+        width: 70%;
+    }
+
+    aside {
+        width: 30%;
+    }
+
+    .container-flex {
+        flex-direction: row;
+    }
+}
+</style>
+
+   
+
+        
+        </head>
+        <body>
+        <!-- navigation -->
+        <nav>
+        <img src="/assets/img/kodego.png" alt="logo">
+        <ul class="li-nav-items">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Posts</a>
+            </li>
+            <li>
+                <a href="#">Login</a>
+            </li>
+            <li>
+                <a href="#">Register</a>
+            </li>
+            <li>
+                <a href="#" class="create-post-btn">New Post</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- header -->
+    <header>
+        <div class="header-content">
+            <h1>Let's Close The Gap</h1>    
+            <p>
+                B/V logging is one of the ways we can reach out to other people by 
+                sharing our experiences through social media sites or putting up 
+                your own. 
+            </p>
+            <a href="#">
+                <span>What Are You Up To?</span>
+            </a>
+        </div>
+    </header>
+    <!-- content -->
+    <section class="container-flex">
+        <!-- Main Content Goes Here -->
+        <main>
+            <article class="post-content">
+                <h1>What Separate Men From The Boys</h1>
+                <img src="./assets/img/quote.jpg" class="post-image" alt="post-image">
+                <p class="post-info">
+                    <span class="post-author">
+                        <i class="fas fa-user"></i>
+                        <a href="#">Juan Tamad</a>
+                    </span>
+                    <span class="post-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <time datetime="2022-09-30">September 30, 2022</time>
+                    </span>
+                </p>
+                <p class="post-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ea, obcaecati ullam illum quaerat praesentium nesciunt officia exercitationem quisquam delectus necessitatibus numquam consequuntur voluptatum quibusdam. Porro et soluta eaque alias!
+                </p>
+                <a href="#" class="post-read-more">Read More</a>
+            </article>  
+            <article class="post-content">
+                <h1>I Trained Muay Thai for 30 Days</h1>
+                <img src="./assets/img/muay-thai-or-thai-boxer.jpg" class="post-image" alt="post-image">
+                <p class="post-info">
+                    <span class="post-author">
+                        <i class="fas fa-user"></i>
+                        <a href="#">Pedro Penduko</a>
+                    </span>
+                    <span class="post-date">
+                        <i class="far fa-user"></i>
+                        <time datetime="2022-08-01">August 30, 2022</time>
+                    </span>
+                </p>
+                <p class="post-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ea, obcaecati ullam illum quaerat praesentium nesciunt officia exercitationem quisquam delectus necessitatibus numquam consequuntur voluptatum quibusdam. Porro et soluta eaque alias!
+                </p>
+                <a href="#" class="post-read-more">Read More</a>
+            </article>
+            <article class="post-content">
+                <h1>New Challenge, New Tool</h1>
+                <img src="./assets/img/Mac.jpeg" class="post-image" alt="post-image">
+                <p class="post-info">
+                    <span class="post-author">
+                        <i class="fas fa-user"></i>
+                        <a href="#">Juan Tamad</a>
+                    </span>
+                    <span class="post-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <time datetime="2022-09-30">July 05, 2022</time>
+                    </span>
+                </p>
+                <p class="post-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ea, obcaecati ullam illum quaerat praesentium nesciunt officia exercitationem quisquam delectus necessitatibus numquam consequuntur voluptatum quibusdam. Porro et soluta eaque alias!
+                </p>
+                <a href="#" class="post-read-more">Read More</a>
+            </article> 
+            <article class="post-content">
+                <h1>Gyms Are Now Open</h1>
+                <img src="./assets/img/bbasket.jpg" class="post-image" alt="post-image">
+                <p class="post-info">
+                    <span class="post-author">
+                        <i class="fas fa-user"></i>
+                        <a href="#">Juan Tamad</a>
+                    </span>
+                    <span class="post-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <time datetime="2022-09-30">July 05, 2022</time>
+                    </span>
+                </p>
+                <p class="post-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ea, obcaecati ullam illum quaerat praesentium nesciunt officia exercitationem quisquam delectus necessitatibus numquam consequuntur voluptatum quibusdam. Porro et soluta eaque alias!
+                </p>
+                <a href="#" class="post-read-more">Read More</a>
+            </article>        
+        </main>
+        <!-- Right Side Bar Goes Here -->
+        <aside class="sidebar">
+            <div class="about-me">
+                <h1>About The Author</h1>
+                <img src="./assets/img/Juan.jpeg" alt="author image" srcset="">
+                <h2 class="about-name">Juan Tamad</h2>
+                <small> Full Stack Web Developer | Aspiring Martial Artist </small>
+                <p class="about-me-bio">
+                I started my professional career working as a Firmware Engineer from 2002 to 2006. I was responsible for designing PCB Circuit boards both analog and digital using OrCad and Eagle. One of my main role in the company is to write firmware for PIC and ATMEL microcontrollers using Assembly Language, PIC Basic and PLM-51.
+                </p>
+            </div>
+             <article class="post-content">
+                <h1>The Archer in Me</h1>
+                <img src="./assets/img/archery.jpg" class="post-image" alt="post-image">
+                <p class="post-info">
+                    <span class="post-author">
+                        <i class="fas fa-user"></i>
+                        <a href="#">Juan Tamad</a>
+                    </span>
+                    <span class="post-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <time datetime="2022-09-30">September 30, 2022</time>
+                    </span>
+                </p>
+                <p class="post-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ea, obcaecati ullam illum quaerat praesentium nesciunt officia exercitationem quisquam delectus necessitatibus numquam consequuntur voluptatum quibusdam. Porro et soluta eaque alias!
+                </p>
+                <a href="#" class="post-read-more">Read More</a>
+            </article>
+            <article class="post-content">
+                <h1>Developer Roles</h1>
+                <img src="./assets/img/percentage-of-full-stack-developers.jpg" class="post-image" alt="post-image">
+                <p class="post-info">
+                    <span class="post-author">
+                        <i class="fas fa-user"></i>
+                        <a href="#">Bagani</a>
+                    </span>
+                    <span class="post-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <time datetime="2022-09-30">Feb 23, 2018</time>
+                    </span>
+                </p>
+                <p class="post-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ea, obcaecati ullam illum quaerat praesentium nesciunt officia exercitationem quisquam delectus necessitatibus numquam consequuntur voluptatum quibusdam. Porro et soluta eaque alias!
+                </p>
+                <a href="#" class="post-read-more">Read More</a>
+            </article> 
+            <article class="post-content">
+                <h1>Meet Bruce</h1>
+                <img src="./assets/img/main_jack_russell.jpg" class="post-image" alt="post-image">
+                <p class="post-info">
+                    <span class="post-author">
+                        <i class="fas fa-user"></i>
+                        <a href="#">La-ang</a>
+                    </span>
+                    <span class="post-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <time datetime="2022-09-30">Jan 30, 2022</time>
+                    </span>
+                </p>
+                <p class="post-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ea, obcaecati ullam illum quaerat praesentium nesciunt officia exercitationem quisquam delectus necessitatibus numquam consequuntur voluptatum quibusdam. Porro et soluta eaque alias!
+                </p>
+                <a href="#" class="post-read-more">Read More</a>
+            </article>
+            <article class="post-content">
+                <h1>New Item In My Collection</h1>
+                <img src="./assets/img/ginunting-kalahi.jpg" class="post-image" alt="post-image">
+                <p class="post-info">
+                    <span class="post-author">
+                        <i class="fas fa-user"></i>
+                        <a href="#">Bagani</a>
+                    </span>
+                    <span class="post-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <time datetime="2022-09-30">Feb 20, 2019</time>
+                    </span>
+                </p>
+                <p class="post-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ea, obcaecati ullam illum quaerat praesentium nesciunt officia exercitationem quisquam delectus necessitatibus numquam consequuntur voluptatum quibusdam. Porro et soluta eaque alias!
+                </p>
+                <a href="#" class="post-read-more">Read More</a>
+            </article>
+              
+        </aside>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="about">
+            <h1>
+                <span class="logo-text">Juan Tamad</span>
+                <span>Blog</span>
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem  praesentium temporibus ab error ipsa?</p>
+            <div class="contact">
+                <span>
+                    <i class="fas fa-phone"></i>
+                    +63123456789
+                </span>
+                <span>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:erwin@kodego.ph">erwin@kodego.ph</a>
+                </span>
+            </div>
+            <div class="socials">
+                <a href="http://youtube.com">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="http://youtube.com">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="http://youtube.com">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="http://youtube.com">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
